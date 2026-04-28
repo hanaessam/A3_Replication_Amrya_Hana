@@ -1,0 +1,119 @@
+# =========================
+# Data files
+# =========================
+
+# Raw/private datasets
+data/raw/
+data/**/*.csv
+data/**/*.xlsx
+data/**/*.xls
+data/**/*.parquet
+data/**/*.json
+data/**/*.pkl
+data/**/*.pickle
+data/**/*.db
+data/**/*.sqlite
+
+# Keep folder structure
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+
+# =========================
+# Generated outputs
+# =========================
+
+outputs/
+!outputs/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/tables/.gitkeep
+
+
+# =========================
+# Reports and prompt logs
+# =========================
+
+# Usually do NOT publish final PDF/report if it contains student info, dataset results, or prompt logs
+report/*.pdf
+report/*.docx
+prompts/*.xlsx
+prompts/*.xls
+
+# Keep folder structure
+!report/.gitkeep
+!prompts/.gitkeep
+
+
+# =========================
+# Jupyter Notebook checkpoints
+# =========================
+
+.ipynb_checkpoints/
+
+
+# =========================
+# Python cache and environments
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+conda-env/
+*.egg-info/
+
+
+# =========================
+# System files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# IDE/editor files
+# =========================
+
+.vscode/
+.idea/
+
+
+# =========================
+# Secrets / credentials
+# =========================
+
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+token.json
+secrets.json
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+
+# =========================
+# Large model/cache files
+# =========================
+
+models/
+cache/
+huggingface_cache/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
